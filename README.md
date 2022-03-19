@@ -11,8 +11,14 @@
 #### 3.前端页面使用 **AJAX** 显示数据和发送请求，服务端返回 **json** 文件，使得网页在多平台都可正常使用，如安卓、Windows、iMac。<br><br>
 #### 4.对于添加信息进行了 **双重校验** ，前端校验和 **服务端JS303校验** 使得数据更加安全。并且前端校验都为无极刷新校验，实时监听用户输入。<br><br>
 #### 5.数据显示采用了分页工具 **pagehelper**，使开发更加方便<br><br>
-#### 6.后端整合了 **Spring, SpringMVC, Mybatis** 三种框架进行开发。启用了 **事务管理**，使用了 **Restful风格**，服务器根据method的不同来判断浏览器期望做的业务行为。<br><br>
+#### 6.后端整合了 **Spring, SpringMVC, Mybatis** 三种框架进行开发。启用了 **事务管理**、注解事务，使用了 **Restful风格**，服务器根据method的不同来判断浏览器期望做的业务行为。<br><br>
 #### 7.项目主要由 **Mybatis Generator** （用于**Mybatis逆向工程**的工具）生成，大大简化了程序开发。
+
+## 值得注意的地方
+### 1.
+![image](https://user-images.githubusercontent.com/91240419/159116613-a1def38a-c054-436e-b0d1-aef281c137c5.png)
+### 2.需要用on绑定元素后代的元素
+![image](https://user-images.githubusercontent.com/91240419/159116677-beed05f8-a0bf-47f9-b49d-af5a627b7946.png)
 
 
 
