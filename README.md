@@ -1,6 +1,7 @@
-# 这是一个员工信息管理系统的核心业务~java
+# 这是一个比特币有限公司员工信息管理系统(虚拟公司)~java
 
 具有增删查改的基本功能，并且在许多地方作出了优化改进。<br>
+增加配置了Redis、Nginx、websocket，在配置文件修改成你的配置即可使用。
 ## 上手指南
 将项目克隆到本地后，打开/ssm-crud/src/main/resources/dbconfig.properties文件，将其中数据库地址、用户名、密码更改为自己的即可。<br>
 ![image](https://user-images.githubusercontent.com/91240419/159115663-f173a1a0-3e8c-4577-8481-501b6968c0de.png)
