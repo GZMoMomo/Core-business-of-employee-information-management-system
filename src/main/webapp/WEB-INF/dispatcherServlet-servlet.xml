@@ -26,5 +26,27 @@
   <mvc:default-servlet-handler/>
   <!-- 能支持springmvc更高级的功能 jsr303校验，快捷ajax，映射动态请求 -->
   <mvc:annotation-driven></mvc:annotation-driven>
-  
+  <!--启用shiro注解 -->
+    <bean
+        class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+        depends-on="lifecycleBeanPostProcessor">
+        <property name="proxyTargetClass" value="true" />
+    </bean>
+    <bean
+        class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager" />
+    </bean>
+     
+    <!-- 控制器异常处理 -->
+    <bean id="exceptionHandlerExceptionResolver" class="org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver">
+    </bean>
+    <bean class="crud.controller.DefaultExceptionHandler"/> 
 </beans>
+
+
+
+
+
+
+
+

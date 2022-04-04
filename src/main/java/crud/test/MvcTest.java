@@ -53,5 +53,7 @@ public class MvcTest {
   for(Employee employee:list) {
 	  System.out.println("id:"+employee.getEmpId()+"  Name:"+employee.getEmpName());
   }
+  
+  
   }
 }

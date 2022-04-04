@@ -1,10 +1,12 @@
 package crud.bean;
 
+import java.io.Serializable;
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Pattern;
 
 
-public class Employee {
+public class Employee implements Serializable {
     private Integer empId;
    
     @Pattern(regexp="(^[a-zA-Z0-9_-]{3,16}$)|(^[\\u2E80-\\u9FFF])"
