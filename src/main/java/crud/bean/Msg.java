@@ -1,5 +1,6 @@
 package crud.bean;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +11,7 @@ import com.github.pagehelper.PageInfo;
  * @author Administrator
  *
  */
-public class Msg {
+public class Msg implements Serializable {
     //×´Ì¬Âë 100-³É¹¦   200-Ê§°Ü
 	private int code;
 	
